@@ -46,7 +46,7 @@ function calculateMartingale() {
                 <td>${totalLost}</td>
                 <td>${takeProfit}</td>
                 <td>${netProfit}</td>
-                <td><input type="checkbox" ${i === 1 ? "checked" : ""} onchange="saveCheckboxState(${i - 1}, this.checked)"></td>
+                <td><input type="checkbox" ${i === 0 ? "checked" : ""} onchange="saveCheckboxState(${i - 1}, this.checked)"></td>
             </tr>
         `;
         tableBody.innerHTML += row;
